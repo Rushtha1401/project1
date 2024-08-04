@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT BOT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+        }
+        body
+        {
+            background-color: #1491a4;
+            background-image: url(https://media.istockphoto.com/id/1458826985/video/technology-and-chatbot-robot-icons-background-endless-animation.jpg?s=640x640&k=20&c=FMsriEuSAcgsRUiN2j1j3yR4nrDjwq7ojcJ3E1dF89I=);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            height: 500px;
+            width: 380px;
+            background-color: aliceblue;
+            border: 2px solid black;
+            position: fixed;
+            bottom: 100px;
+            right: 550px;
+            box-shadow: 10px 10px 20px 10px black;
+        }
+        .chat-header{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(24, 45, 148);
+        }
+        .logo{
+            height: 60px;
+            width: 65px;
+            box-shadow: 0px 0px 10px 0px black;
+
+        }
+        .title{
+            padding-left: 30px;
+        }
+        .chat-body{
+            padding: 8px 10px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            overflow-y: auto;
+        }
+        .chat-input{
+            height: 60px;
+            align-items: center;
+            display: flex;
+            border-top: 1px solid rgba(170, 170, 170, 0);
+        }
+        #txtip{
+            flex: 9;
+            line-height: 30px;
+            border: none;
+            outline: none;
+            width: 330px;
+            margin-left: 10px;
+            font-size: 1rem;
+            background-color: lightgray;
+            caret-color: black;
+        }
+        .send{
+            flex: 1;
+            height: 35px;
+        }
+        .div{
+            align-items: right;
+        }
+        .user-message{
+            padding: 8px;
+            background-color: #909899;
+            margin: 2px;
+            width: max-content;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px 0px 10px 10px;
+            text-align: right;
+            align-items: right;
+        }
+        .chatBotMessage{
+            background-color: #0d6ea2;
+            color: white;
+            align-self: flex-start;
+            align-items: flex-start;
+            padding: 8px;
+            border-radius: 0px 15px 15px 15px;
+        }
+        </style>
+<script src="project.js" defer></script>
+<script src="response.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+                <img src="chatter.png" class="logo">
+            <div class="title">
+                <h1>CHATTER BOX</h1>
+            </div>
+        </div>
+        <div class="chat-body"></div>
+        <div class="chat-input">
+            <div class="input-secion">
+                <input type="text" id="txtip" placeholder="Type here...">
+            </div>
+        <div>
+            <img src="sendimg.jpeg" alt="send" class="send">
+        </div>
+        </div>
+    </div>
+</body>
+</html>
