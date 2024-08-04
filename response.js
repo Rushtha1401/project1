@@ -3,7 +3,6 @@ const responseObj={
     hi : "Hi Buddy !",
     hii : "Hi Buddy !",
     hey : "Hey ! What's Up",
-    
     "how are you" : "Fantastic... How are you ?",
     "I'm fine" :"Oh ! That's Wonderful",
     "I am fine" :"Oh ! That's Wonderful",
@@ -42,7 +41,5 @@ const responseObj={
     "yes" :"Oh that's Fantastic !",
     "good night" :  "Good night, Sweet Dreams Buddy ! Have a restful sleep.",
     today : new Date().toDateString(),
-    "today date" : new Date().toDateString(),
-    time : new Date().toLocaleTimeString(),
-
+    "today date" : new Date().toDateString(),    time : new Date().toLocaleTimeString()
 }
