@@ -32,11 +32,11 @@ const renderMesEle=(txt,type)=>{
     chatbody.append(messageElement);
 };
 const getChatBotResponse = (userInput)=>{
-    return responseObj[userInput.toLowerCase()] || "Please try something else";
+    return responseObj[userInput.toLowerCase()] || "Sorry...Please try something else";
 };
 const setscrollPos=()=>{
     if(chatbody.scrollHeight>0){
         chatbody.scrollTop = chatbody.scrollHeight; // Auto-scroll to the bottom
 
     }
-}
+};
